@@ -1,0 +1,458 @@
+*,
+::after,
+::before {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  z-index: 999;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-image: url(../images/hassan4.jpg);
+  background-size: cover;
+  background-position: left left;
+}
+
+.nav {
+  background-color: #7b7b7cbb !important;
+}
+
+.nav .logo {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+  letter-spacing: 1px;
+}
+
+.bars-icon {
+  color: white;
+  font-weight: 600;
+  font-size: 1.375rem;
+}
+
+.nav .container .collapse ul {
+  margin: 0.3125rem 0 0 auto;
+}
+
+.nav .container .collapse ul li {
+  position: relative;
+}
+
+.nav .container .collapse ul li a {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.0625rem;
+}
+
+.nav .container .collapse ul li a:before,
+.dropbtn::before {
+  content: "";
+  width: 0%;
+  height: 0.125rem;
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav .container .collapse ul li a:hover:before,
+.dropbtn:hover:before {
+  content: "";
+  width: 70%;
+  height: 0.125rem;
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0;
+  background-color: white;
+}
+
+.nav .container .collapse ul li .activation::before {
+  content: "";
+  width: 70%;
+  height: 0.125rem;
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0;
+  background-color: white;
+}
+
+.dropbtn {
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.0625rem;
+  margin-top: 0.4375rem;
+  padding-left: 0;
+  padding-bottom: 0.5125rem;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 2.4rem;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black !important;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown2 {
+  min-width: 200px;
+  position: absolute;
+  right: 100%;
+  top: 20%;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  visibility: hidden;
+}
+
+.deep-dowen:hover~.dropdown2 {
+  visibility: visible;
+}
+
+.layout {
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+.header-title {
+  font-size: 4.5rem;
+}
+
+.header-animate {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.title-s {
+  font-weight: 600;
+  color: #1e1e1e;
+  font-size: 1.1rem;
+}
+
+.html .progress-bar {
+  width: 90%;
+}
+
+.css .progress-bar {
+  width: 85%;
+}
+
+.bootstrap .progress-bar {
+  width: 80%;
+}
+
+.javascript .progress-bar {
+  width: 90%;
+}
+
+.skill-content {
+  margin-bottom: 0.3125rem;
+}
+
+.under-line {
+  height: 3px;
+  background-color: #09c;
+  width: 20%;
+}
+
+.services .under-line {
+  width: 5%;
+  height: 0.3875rem;
+}
+
+.servic-icon {
+  width: 120px;
+  height: 120px;
+  border: solid 10px #09c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.servic-continer:hover .servic-icon {
+  border: solid 10px #cde1f8;
+  background-color: #09c;
+  color: white;
+}
+
+.section-counter {
+  padding: 8rem 0;
+  background-image: url(../images/post-3.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.section-counter .layout {
+  background-color: rgb(0, 120, 255, 0.7);
+}
+
+.counters {
+  width: 25%;
+  z-index: 999;
+}
+
+.counter-icon {
+  width: 80px;
+  height: 80px;
+  border: solid 10px #cde1f8;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .under-line {
+  width: 50px;
+  height: 0.3875rem;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.card img {
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.section-slider {
+  background-image: url(../images/overlay-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.carousel {
+  background-color: rgba(0, 153, 204, 0.582);
+  padding: 8rem 0;
+}
+
+.testimonial {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.testimonial img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 0.725rem;
+  height: 0.725rem;
+  border-radius: 50%;
+}
+
+.blog .under-line {
+  width: 2.5rem;
+  height: 0.3875rem;
+}
+
+.card-blog {
+  border-radius: 8px !important;
+}
+
+.card-footer {
+  border-radius: 8px !important;
+}
+
+.card-category {
+  width: 30%;
+  text-align: center;
+  position: relative;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.card-category h6 {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+
+.card-blog-content a {
+  text-decoration: none;
+  color: black;
+}
+
+.card-footer {
+  background-color: #f8f8f8;
+}
+
+.post-author a {
+  text-decoration: none;
+  color: #1e1e1e;
+}
+
+.social-icon {
+  margin-bottom: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 3px #09c;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icon a {
+  text-decoration: none;
+  color: #1e1e1e;
+}
+
+.social-icon:hover {
+  border: solid 3px #cde1f8;
+  background-color: #09c;
+  color: white;
+}
+
+.footer {
+  padding: 8rem 0;
+  background-image: url(../images/overlay-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.footer-layout {
+  position: absolute;
+  background-color: rgb(0, 120, 255, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.footer .container {
+  position: relative;
+  z-index: 99;
+}
+
+/* .about-side2 h2::before{
+    content: "";
+    height: 3px;
+    width: 20%;
+    background-color: #09c;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+
+} */
+
+@media (max-width: 992px) {
+  .dropdown2 {
+    min-width: 200px;
+    position: absolute;
+    right: 0%;
+    top: 40%;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+  }
+
+  .nav .container .collapse ul li a:hover:before,
+  .dropbtn:hover:before {
+    content: "";
+    width: 0%;
+    height: 0.125rem;
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0;
+    background-color: white;
+  }
+
+  .nav .container .collapse ul li .activation::before {
+    content: "";
+    width: 0%;
+    height: 0.125rem;
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0;
+    background-color: white;
+  }
+
+  .nav .container .collapse ul li a:hover,
+  .dropbtn:hover {
+    color: #09c;
+  }
+
+  .nav .container .collapse ul li .activation {
+    color: #09c;
+  }
+}
+
+@media (max-width: 575px) {
+  .img-container {
+    width: 30%;
+  }
+
+  .counters {
+    width: 100%;
+  }
+}
